@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+main {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.album-cover img {
+  width: 100%;
+}
+
+body {
+  font-size: 1.6em;
+  font-family: 'Roboto', sans-serif;
+}
