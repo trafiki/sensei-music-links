@@ -112,3 +112,15 @@ ul.link-list li a:hover {
   width: 100%;
   opacity: .7;
 }
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+  .album-cover {
+    position: static;
+  }
+
+  .links-header:after {
+    top: 404px;
+    z-index: 5;
+  }
+}
