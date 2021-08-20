@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 main {
   width: 320px;
   margin: 0 auto;
+  /* min-height: 100vh; */
+  position: relative;
 }
 
 .album-cover img {
@@ -12,4 +20,95 @@ main {
 body {
   font-size: 1.6em;
   font-family: 'Roboto', sans-serif;
+}
+
+.links-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 407px;
+  margin-top: -3px;
+}
+
+.links-header {
+  background: #181818;
+  margin-top: -7px;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem;
+  padding: 1.2rem;
+}
+
+.links-header:after {
+  content: "";
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-top: 12px solid #181818;
+  position: absolute;
+  top: 405px;
+}
+
+.links-header h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.links-header p {
+  margin-top: .3rem;
+}
+
+.link-list {
+  width: 100%;
+  padding-left: 0;
+  list-style: none;
+  background: #fff;
+  margin-bottom: .2em;
+}
+
+.album-cover {
+  position: fixed;
+  width: 320px;
+  top: 0;
+  z-index: 100;
+}
+
+.link-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  box-shadow: inset 0 -2px 9px 0 rgb(0 0 0 / 6%);
+  align-items: center;
+}
+
+ul.link-list li img {
+  width: 125px;
+}
+
+ul.link-list li a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+  color: #777;
+  border: 1px solid #e1e1e1;
+  padding: .5rem .7rem;
+  background: linear-gradient(180deg, #fff, #f5f5f5);
+  border-radius: .3rem;
+}
+
+ul.link-list li a:hover {
+  color: #fff;
+  background: #181818;
+}
+
+.site-bg {
+  position: fixed;
+  width: 100vw;
+  background: #000;
+  height: 100vh;
+}
+
+.site-bg img {
+  filter: blur(30px);
+  width: 100%;
+  opacity: .7;
 }
